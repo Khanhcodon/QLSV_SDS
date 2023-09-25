@@ -15,7 +15,7 @@ namespace QuanLySinhVien.Service
         {
             return await _lopHocRepository.GetListLopHoc();
         }
-        public async Task<bool> UpdateLopHoc(LopHoc lh)
+        public async Task<bool> UpdateLopHoc(List<LopHoc> lh)
         {
             return await _lopHocRepository.UpdateLopHoc(lh);
         }
@@ -23,9 +23,9 @@ namespace QuanLySinhVien.Service
         {
             return await _lopHocRepository.GetLopHocByID(id);
         }
-        public async Task<bool> AddLopHoc(LopHoc sv)
+        public async Task<bool> AddLopHoc(List<LopHoc> lh)
         {
-            return await _lopHocRepository.AddLopHoc(sv);
+            return await _lopHocRepository.AddLopHoc(lh);
         }
         public async void DeleteLopHoc(LopHoc lophoc) 
         {

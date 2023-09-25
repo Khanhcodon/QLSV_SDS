@@ -30,27 +30,31 @@ namespace GrpcServer.Repository
 
         }
 
-        public  Boolean UpdateLopHoc(LopHoc lh)
+        public  Boolean UpdateLopHoc(List<LopHoc> lophoc)
         {
 
             using (var session = FluentNHibernateHelper.GetSession())
             {
                 using (var tran = session.BeginTransaction())
                 {
-                    try
-                    {
+                        try
+                        {
+                        foreach (var item in lophoc)
+                        {
+                            session.Update(item);
 
-                        session.Update(lh);
-
-                        tran.Commit();
-                        return true;
-                    }
-                    catch (Exception exx)
-                    {
-                        tran.Rollback();
-                        throw exx;
-                        return false;
-                    }
+                            tran.Commit();
+                        }
+                            
+                            return true;
+                        }
+                        catch (Exception exx)
+                        {
+                            tran.Rollback();
+                            throw exx;
+                            return false;
+                        }
+                   
                 }
             }
         }
@@ -77,7 +81,7 @@ namespace GrpcServer.Repository
 
         }
 
-        public Boolean AddLopHoc(LopHoc lh)
+        public Boolean AddLopHoc(List<LopHoc> lophoc)
         {
 
             using (var session = FluentNHibernateHelper.GetSession())
@@ -86,10 +90,12 @@ namespace GrpcServer.Repository
                 {
                     try
                     {
+                        foreach(var item in lophoc)
+                        {
+                            session.Save(item);
 
-                        session.Save(lh);
-
-                        tran.Commit();
+                            tran.Commit();
+                        }
                         return true;
                     }
                     catch (Exception exx)

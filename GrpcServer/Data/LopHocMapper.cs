@@ -5,23 +5,23 @@ namespace GrpcServer.Data
 {
     public class LopHocMapper
     {
-        public LopHocGrpc ClassToClassGrpc(LopHoc _lopHoc)
+        public LopHocGrpc ClassToClassGrpc(LopHoc lopHoc)
         {
             LopHocGrpc lopHocGrpc = new LopHocGrpc();
-            lopHocGrpc.ClassId = _lopHoc.ClassId.ToString();
-            lopHocGrpc.ClassName = _lopHoc.ClassName;
-            lopHocGrpc.ObjectName = _lopHoc.ObjectName;
-            lopHocGrpc.Status = _lopHoc.Status;
+            lopHocGrpc.ClassId = lopHoc.ClassId.ToString();
+            lopHocGrpc.ClassName = lopHoc.ClassName;
+            lopHocGrpc.ObjectName = lopHoc.ObjectName;
+            lopHocGrpc.Status = lopHoc.Status;
             return lopHocGrpc;
         }
         public LopHoc ClassGrpcToClass(LopHocGrpc lopHocGrpc)
         {
-            LopHoc _lopHoc = new LopHoc();
-            _lopHoc.ClassId = int.Parse(lopHocGrpc.ClassId);
-            _lopHoc.ClassName = lopHocGrpc.ClassName;
-            _lopHoc.ObjectName = lopHocGrpc.ObjectName;
-            _lopHoc.Status = lopHocGrpc.Status;
-            return _lopHoc;
+            LopHoc lopHoc = new LopHoc();
+            lopHoc.ClassId = int.Parse(lopHocGrpc.ClassId);
+            lopHoc.ClassName = lopHocGrpc.ClassName;
+            lopHoc.ObjectName = lopHocGrpc.ObjectName;
+            lopHoc.Status = lopHocGrpc.Status;
+            return lopHoc;
         }
     }
 }

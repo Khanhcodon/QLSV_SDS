@@ -95,12 +95,11 @@ namespace QuanLySinhVien.Pages
         {
             if (data.ClassId == null)
             {
-                var resultAdd = await lopHocService.AddLopHoc(data);
-            }
-            else
-            {
-
-            }
+                //var resultAdd = await lopHocService.AddLopHoc(data);
+                List<LopHoc> lophoc = new List<LopHoc>();
+                lophoc.Add(data);
+                var resultAdd = await lopHocService.AddLopHoc(lophoc);
+            }            
             await LoadAsync();
             visible = false;
         }
@@ -121,19 +120,20 @@ namespace QuanLySinhVien.Pages
 
         }
 
-        async Task Update(LopHoc data)
-        {
-            if (data.ClassId == null)
-            {
-                var resultAdd = await lopHocService.UpdateLopHoc(data);
+        //async Task Update(List<LopHoc> data)
+        //{
+        //    foreach (var lopHoc in data)
+        //    {
+        //        if (lopHoc.ClassId == null)
+        //    {
+        //        var resultAdd = await lopHocService.UpdateLopHoc(data);
 
-            }
-            else
-            {
+        //    }
+            
+        //    }
+        //    await LoadAsync();
 
-            }
-            await LoadAsync();
-        }
+        //}
 
 
 

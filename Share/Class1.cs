@@ -36,11 +36,11 @@ namespace Share
         [OperationContract]
         ListLH GetListLopHoc(Empty request, CallContext context = default);
         [OperationContract]
-        Empty UpdateLopHoc(LopHocGrpc lh, CallContext context = default);
+        Empty UpdateLopHoc(List<LopHocGrpc> lh, CallContext context = default);
         [OperationContract]
         LopHocGrpc GetLopHocById(string id, CallContext context = default);
         [OperationContract]
-        Empty AddLopHoc(LopHocGrpc lh, CallContext context = default);
+        Empty AddLopHoc(List<LopHocGrpc> lh, CallContext context = default);
         [OperationContract]
         void DeleteLopHoc(LopHocGrpc lophoc, CallContext context = default);
     }

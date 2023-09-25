@@ -68,11 +68,17 @@ namespace QuanLySinhVien.Repository
         }
 
         
-        public async Task<bool> AddLopHoc(LopHoc lophoc)
+        public async Task<bool> AddLopHoc(List<LopHoc> lophoc)
         {
             try
             {
-                LopHocGrpc lophocGrpc = lopHocMapper.ClassToClassGrpc(lophoc);
+                List<LopHocGrpc> lophocGrpc = new List<LopHocGrpc>();
+                foreach (var item in lophoc)
+                {
+                    LopHocGrpc lh = lopHocMapper.ClassToClassGrpc(item);
+                    lophocGrpc.Add(lh);
+                }
+                
                 var client = getService();
                 client.AddLopHoc(lophocGrpc);
 
@@ -85,20 +91,27 @@ namespace QuanLySinhVien.Repository
            
         }
 
-        public async Task<bool> UpdateLopHoc(LopHoc lophoc)
+        public async Task<bool> UpdateLopHoc(List<LopHoc> lophoc)
         {
-            try
-            {
-                LopHocGrpc lophocGrpc = lopHocMapper.ClassToClassGrpc(lophoc);
-                var client = getService();
-                client.UpdateLopHoc(lophocGrpc);
+            
+                try
+                {
+                    List<LopHocGrpc> lophocGrpc = new List<LopHocGrpc>();
+                foreach (var item in lophoc)
+                {
+                    LopHocGrpc lh = lopHocMapper.ClassToClassGrpc(item);
+                    lophocGrpc.Add(lh);
+                }
+                    var client = getService();
+                    client.UpdateLopHoc(lophocGrpc);
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
+           
         }
         public void DeleteLopHoc(LopHoc lophoc)
         {

@@ -21,7 +21,7 @@ namespace QuanLySinhVien.Data
             {
                 if (_sessionFactory == null)
                 {
-                    string connectionString = "Data Source = DESKTOP-FHOHN79\\SQLEXPRESS; Initial Catalog = QuanLySinhVien; User Id=khanhdq; Password=123abc;";
+                    string connectionString = "Data Source = DESKTOP-VSMO4JS; Initial Catalog = QuanLySinhVien; User Id=khanhdq; Password=Asdfgh38;";
                     _sessionFactory = Fluently.Configure()
                         .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
                         .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SinhVien>())

@@ -168,7 +168,7 @@ namespace QuanLySinhVien.Pages
             await JSRuntime.InvokeVoidAsync("saveAsFile", fileName, base64);
         }
 
-        
+
         public async Task OpenExcelFileFromDisk(InputFileChangeEventArgs e)
         {
             IronXL.License.LicenseKey = "PASTE TRIAL OR LICENSE KEY";
@@ -196,22 +196,22 @@ namespace QuanLySinhVien.Pages
 
             List<SinhVien> sinhvienList = new List<SinhVien>();
             //sinhvienList.Clear();
-            
-                sinhvienList = (from DataRow displayDataTable in displayDataTable.Rows
-                                select new SinhVien()
-                                {
-                                    Guid = Guid.NewGuid(),
-                                    Name = displayDataTable["Họ Tên"].ToString(),
-                                    Birth = Convert.ToDateTime(displayDataTable["Ngày sinh"]),
-                                    Class = displayDataTable["Lớp học"].ToString(),
-                                    Score = (float)Convert.ToDouble(displayDataTable["Điểm tích lũy"])
-                                }).ToList();
-           
+
+            sinhvienList = (from DataRow displayDataTable in displayDataTable.Rows
+                            select new SinhVien()
+                            {
+                                Guid = Guid.NewGuid(),
+                                Name = displayDataTable["Họ Tên"].ToString(),
+                                Birth = Convert.ToDateTime(displayDataTable["Ngày sinh"]),
+                                Class = displayDataTable["Lớp học"].ToString(),
+                                Score = (float)Convert.ToDouble(displayDataTable["Điểm tích lũy"])
+                            }).ToList();
+
             foreach (var svl in sinhvienList)
             {
                 foreach (var sv in sinhvien)
                 {
-                    if (svl.Name != sv.Name && svl.Birth != sv.Birth && svl.Name != null && svl.Birth != null  )
+                    if (svl.Name != sv.Name && svl.Birth != sv.Birth && svl.Name != null && svl.Birth != null)
                     {
                         sv.Guid = Guid.NewGuid();
                         sv.Name = svl.Name;
@@ -220,8 +220,8 @@ namespace QuanLySinhVien.Pages
                         sv.Score = svl.Score;
                         await sinhVienService.AddSinhVien(sv);
                     }
-                        
-                    
+
+
                 }
             }
 

@@ -17,16 +17,20 @@ namespace GrpcServer.Data
 
         private static ISessionFactory SessionFactory
         {
+            
             get
             {
-                if (_sessionFactory == null)
-                {
-                    string connectionString = "Data Source = DESKTOP-FHOHN79\\SQLEXPRESS; Initial Catalog = QuanLySinhVien; User Id=khanhdq; Password=123abc;";
-                    _sessionFactory = Fluently.Configure()
-                        .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
-                        .Mappings(m => m.FluentMappings.AddFromAssemblyOf<LopHoc>())
-                        .BuildSessionFactory();
-                }
+               
+                    if (_sessionFactory == null)
+                    {
+                        string connectionString = "Data Source = DESKTOP-VSMO4JS; Initial Catalog = QuanLySinhVien; User Id=khanhdq; Password=Asdfgh38;";
+                        _sessionFactory = Fluently.Configure()
+                            .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
+                            .Mappings(m => m.FluentMappings.AddFromAssemblyOf<LopHoc>())
+                            .BuildSessionFactory();
+                    }
+              
+                
                 return _sessionFactory;
             }
 

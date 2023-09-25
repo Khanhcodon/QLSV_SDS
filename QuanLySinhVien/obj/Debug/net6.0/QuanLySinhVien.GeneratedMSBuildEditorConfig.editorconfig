@@ -9,14 +9,14 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLySinhVien
 build_property.RootNamespace = QuanLySinhVien
-build_property.ProjectDir = C:\Users\ADMIN\source\repos\QuanLySinhVien\
+build_property.ProjectDir = D:\QuanLySinhVien_SDS\QuanLySinhVien\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\repos\QuanLySinhVien
+build_property.MSBuildProjectDirectory = D:\QuanLySinhVien_SDS\QuanLySinhVien
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/App.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/App.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -33,7 +33,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/Counter.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/Counter.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -50,7 +50,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/EditLopHoc.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/EditLopHoc.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -67,7 +67,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdExvcEhvYy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/EditSinhVien.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/EditSinhVien.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -84,7 +84,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNpbmhWaWVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/LopHocList.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/LopHocList.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -101,7 +101,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9wSG9jTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/SinhVienList.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/SinhVienList.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -118,7 +118,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2luaFZpZW5MaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Shared/SurveyPrompt.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -135,7 +135,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/_Imports.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/_Imports.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -152,7 +152,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Shared/MainLayout.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -169,7 +169,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-t8t93atn34
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Shared/NavMenu.razor]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -186,7 +186,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-lco71ha6fv
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/Error.cshtml]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -203,7 +203,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/_Host.cshtml]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 
@@ -220,7 +220,7 @@ build_metadata.AdditionalFiles.IncludeInOutput =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/QuanLySinhVien/Pages/_Layout.cshtml]
+[D:/QuanLySinhVien_SDS/QuanLySinhVien/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.ImportPaths = 
 build_metadata.AdditionalFiles.LangVersion = 
 build_metadata.AdditionalFiles.ListSet = 

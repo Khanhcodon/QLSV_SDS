@@ -7,9 +7,9 @@ namespace GrpcServer.Repository
     public interface ILopHocRepository
     {
         List<LopHoc> GetListLopHoc(Empty request);
-        Boolean UpdateLopHoc(LopHoc lh);
+        Boolean UpdateLopHoc(List<LopHoc> lh);
         LopHoc GetLopHocByID(int id);
-        Boolean AddLopHoc(LopHoc lh);
+        Boolean AddLopHoc(List<LopHoc> lh);
         void DeleteLopHoc(LopHoc lophoc);
     }
 }

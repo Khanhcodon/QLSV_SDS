@@ -41,20 +41,30 @@ namespace GrpcServer.Services
             return lopHocGrpc;
         }
 
-        public Empty AddLopHoc(LopHocGrpc request, CallContext context = default)
+        public Empty AddLopHoc(List<LopHocGrpc> request, CallContext context = default)
         {
             Empty empty = new Empty();
-            LopHoc lophoc = lopHocMapper.ClassGrpcToClass(request);
+            List<LopHoc> lophoc = new List<LopHoc>();
+            foreach (var item in request)
+            {
+                LopHoc lh = lopHocMapper.ClassGrpcToClass(item);
+                lophoc.Add(lh);
+            }
             _lopHocRepository.AddLopHoc(lophoc);
 
             return empty;
 
         }
 
-        public Empty UpdateLopHoc(LopHocGrpc request, CallContext context = default)
+        public Empty UpdateLopHoc(List<LopHocGrpc> request, CallContext context = default)
         {
             Empty empty = new Empty();
-            LopHoc lophoc = lopHocMapper.ClassGrpcToClass(request);
+            List<LopHoc> lophoc = new List<LopHoc>();
+            foreach (var item in request)
+            {
+                LopHoc lh = lopHocMapper.ClassGrpcToClass(item);
+                lophoc.Add(lh);
+            }
              _lopHocRepository.UpdateLopHoc(lophoc);
 
             return empty;
